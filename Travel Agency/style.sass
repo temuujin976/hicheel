@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import variables
+@import scss
+@import functions
+@import paint
+@import mixin
+@import layout
+@import reboot
+@import table-card
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-family: 'Josefin Sans', sans-serif
+    background-color: #eeeeee
+    color: white
+// .bg
+//     background-image: url(img/1.jpg)
+//     background-size: cover
+//     height: 100vh
+.parallax-window
+    min-height: 400px
+    background: transparent
+.main-content
+    text-align: center
+    +my(300px)
+    .main-title
+        font-size: 46px
+        font-weight: bold
+        letter-spacing: 10px
+    .main-text
+        font-size: 20px
+        letter-spacing: 8px
+        margin-bottom: 50px
+    .searching
+        +flexboxcenter
+        text-align: center
+        input
+            +py(25px)
+            width: 100%
+            +noborder
+            text-align: center
+            letter-spacing: 4px
+            color: $secondary
+        a
+            +py(25px)
+            +px(30px)
+            background: $steelblue
+            border: 2px solid white
+            color: white
+            +flexbox
+            align-items: center
+            i
+                font-size: 22px
+                +mx(10px)
+            &:hover
+                background: white
+                color: $steelblue
+                border: 2px solid $steelblue
+    .scrolldown
+        font-size: 18px
+        letter-spacing: 10px
+        +my(200px)
+        i
+        font-size: 32px
+.nav-bg
+    width: 100%
+    height: 100px
+    background-color: $steelblue
+    .navbar
+        +flexbox
+        +my(27px)
+        align-items: center
+        span
+            font-size: 30px
+        ul
+            +flexbox
+            margin-left: auto
+            li
+                +mx(20px)
+                &:hover
+                    color: $primary
+.second-content
+    +flexbox
+    align-items: center
+    +my(120px)
+.sc-title
+    font-size: 34px
+    margin-bottom: 50px
+.sc-text
+    font-size: 18px
+    font-weight: inherit
+    margin-bottom: 50px
+.sc-btn
+    +py(20px)
+    +px(50px)
+    background-color: $steelblue
+    &:hover
+        color: $primary
+.img2
+    +flexbox
+    margin-left: auto
+.sc-footer
+    width: 100%
+    height: 300px
+    background-color: $darkgray
+    .navbar
+        +flexbox
+        align-items: center
+    .icons
+        +flexboxcenter
+        text-align: center
+        i
+            font-size: 85px
+            margin-top: 80px
+        span
+            font-size: 28px
+    .line
+        border: 1px dashed
+        border-color: $secondary transparent transparent
+        width: 330px
+        height: 100px
+        border-radius: 70%/100px 100px 0 0
+        margin-top: 30px
+.content-3
+    +my(250px)
+    padding: 50px
+    background: $darkgray
+    opacity: 0.9
+    border-radius: 3px
+.ct-title
+    font-size: 28px
+    +my(20px)
+.rigthside
+    margin-left: auto
+.lastcontent
+    +flexbox
+.last-title
+    +flexboxcenter
+    +my(100px)
+    font-size: 42px
+.last-2
+    padding: 50px
+    background: $darkgray
+    opacity: 0.9
+    border-radius: 3px
+.arrows
+    text-align: right
+    margin-top: 30px
+    margin-bottom: 150px
+
+    i
+        border: 1px solid $white
+        +py(15px)
+        +px(30px)
+        &:hover
+            background: white
+            color: $darkgray
+.footer
+    width: 100%
+    height: 340px
+    background-color: #232323
+.footer-content
+    text-align: center
+    margin-top: 150px
+    margin-bottom: 30px
+.foot-title
+    font-size: 28px
+    letter-spacing: 5px
+.foot-subtitle
+    font-size: 18px
+    letter-spacing: 2px
+.social-icons
+    +flexbox
+.topbtn
+    text-align: right
+    margin: 20px
+    i
+        border: 1px solid $white
+        +py(15px)
+        +px(15px)
+        &:hover
+            background: white
+            color: $darkgray
